@@ -12,7 +12,7 @@ Content-Type: text/html;
       $(date)
     </p>
     <pre>
-      $(git pull origin master 1>&2;)
+      $(git pull origin master >&2;)
     </pre>
   </body>
 </html>
