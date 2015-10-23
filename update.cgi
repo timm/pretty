@@ -6,7 +6,7 @@ Content-Type: text/html;
 <html>
 <head>
 <title>updating</title>
-</head>"
+</head>
 <body>
 <p>
 $(date)
@@ -17,5 +17,6 @@ $(git pull origin master)
 </body>
 </html>
 EOF
+
 [ -f "index.cgi"  ] && chmod 755 index.cgi
 [ -f "update.cgi" ] && chmod 755 update.cgi
