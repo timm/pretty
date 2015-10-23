@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat <<EOF
+cat <<-EOF
 Content-Type: text/html;
 
 <html>
@@ -12,7 +12,6 @@ Content-Type: text/html;
       $(date)
     </p>
     <pre>
-      
       $(git pull origin master)
     </pre>
   </body>
