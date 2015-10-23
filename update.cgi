@@ -8,8 +8,11 @@ Content-Type: text/html;
     <title>updating</title>
   </head>"
   <body>
-    <pre>
+    <p>
       $(date)
+    </p>
+    <pre>
+      
       $(git pull origin master)
     </pre>
   </body>
