@@ -4,18 +4,17 @@ cat <<EOF
 Content-Type: text/html;
 
 <html>
-	<head>
-		<title>updating</title>
-	</head>"
-	<body>
-		<p>
-			$(date)
-		</p>
-		<pre>
-		
-		$(git pull origin master)
-		</pre>
-	</body>
+  <head>
+    <title>updating</title>
+  </head>"
+  <body>
+    <p>
+      $(date)
+    </p>
+    <pre>
+      $(git pull origin master 1>&2;)
+    </pre>
+  </body>
 </html>
 EOF
 [ -f "index.cgi"  ] && chmod 755 index.cgi
